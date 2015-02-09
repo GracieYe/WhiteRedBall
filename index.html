@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WhiteRedBall</title>
+    <link rel="stylesheet" href="Libs/Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="header">
+    <div class="info">
+        <div class="title">White-Red balls</div>
+        <div class="lifeInfo">
+            <div class="lives"><div id="life"></div><div id="addLife" class="hidden">+1</div></div>
+            <div id="score"></div>
+        </div>
+    </div>
+</div>
+<div id="canvas_body">
+    <canvas id="canvas">
+        当前浏览器不支持Canvas，请更换浏览器后再试
+    </canvas>
+</div>
+<div class="gameInfo"><div  id="st" class="startEnd" onclick="startGame()">Start</div></div>
+<div id="end" class="gameInfo  hidden">
+    <div class="startEnd">End</div>
+    <div class="restart" onclick="restart()">Restart</div>
+</div>
+<div class="arrows">
+    <div id="left" class="hidden"><img class="arr" src="images/left.jpg" width="40" onclick="leftArrow()"></div>
+    <div id="right" class="hidden"><img class="arr" src="images/right.jpg" width="40" onclick="rightArrow()"></div>
+</div>
+<script src="Libs/Tools/jquery-2.1.1.min.js"></script>
+<script src="Libs/Bootstrap/js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
